@@ -1,0 +1,46 @@
+// Variables Endógenas
+
+var y I k a c w R r;
+
+// Variables exógenas
+
+varexo e;
+
+// Parámetros
+
+parameters alpha beta delta rho sigma sigmae;
+
+alpha = 1/3;
+beta = 0.99;
+delta = 0.025;
+rho = 0.95;
+sigma = 1;
+sigmae = 0.01;
+
+// Modelo.
+
+model;
+
+exp(c)ˆ(−sigma) = beta*exp(c(+1))ˆ(−sigma)*(alpha*exp(a(+1))*exp(k)ˆ(alpha−1) + (1−delta));
+exp(k) = exp(a)*exp(k(-1))^(alpha) - exp(c) + (1-delta)*exp(k(-1));
+a = rho*a(-1) + e;
+exp(y) = exp(a)*exp(k(-1))^(alpha);
+exp(I) = exp(y) - exp(c);
+exp(c)ˆ(−sigma) = beta*exp(c(+1))ˆ(−sigma)*(1 + r);
+exp(R) = alpha*exp(a)*exp(k(-1))^(alpha-1);
+exp(w) = (1-alpha)*exp(a)*exp(k(-1))^(alpha);
+
+end;
+
+initval;
+k = log(30);
+y = log(3);
+c = log(2.5);
+I = log(0.5);
+a = 0;
+r = (1/beta) - 1;
+R = log((1/beta) - (1 - delta));
+
+
+end;
+
