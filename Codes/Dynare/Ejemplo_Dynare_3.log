@@ -1,0 +1,89 @@
+Starting Dynare (version 6.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+7 block(s) found:
+  6 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 2 equation(s)
+                                 and 2 feedback variable(s).
+Computing dynamic model derivatives (order 1).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+7 block(s) found:
+  6 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 2 equation(s)
+                                 and 2 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+y 		 1.12546
+I 		 -0.312508
+k 		 3.37637
+a 		 0
+c 		 0.854424
+w 		 0.719992
+R 		 -3.34953
+r 		 0.010101
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               I               k               a               c               w               R               r
+Constant                    1.125457       -0.312508        3.376372               0        0.854424        0.719992       -3.349525        0.010101
+k(-1)                       0.333333       -0.502551        0.962436               0        0.593561        0.333333       -0.666666       -0.022522
+a(-1)                       0.950000        3.022489        0.075562        0.950000        0.304789        0.950000        0.949999        0.029910
+e                           1.000000        3.181568        0.079539        1.000000        0.320831        1.000000        0.999999        0.031485
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                 1.125204        0.041187        0.001696        0.019069        0.281241
+I                -0.312936        0.087842        0.007716       -0.036967        0.105740
+k                 3.376125        0.041703        0.001739        0.046024        0.455895
+a                -0.000173        0.031162        0.000971       -0.012637        0.162313
+c                 0.854225        0.031884        0.001017        0.043764        0.429486
+w                 0.719739        0.041187        0.001696        0.019069        0.281241
+R                -3.349537        0.026072        0.000680       -0.076670        0.188519
+r                 0.010101        0.000844        0.000001       -0.073829        0.206534
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE          y        I        k        a        c        w        R        r
+y            1.0000   0.8965   0.8293   0.9639   0.9250   1.0000   0.2967   0.2278
+I            0.8965   1.0000   0.4959   0.9821   0.6609   0.8965   0.6891   0.6356
+k            0.8293   0.4959   1.0000   0.6505   0.9794   0.8293  -0.2876  -0.3552
+a            0.9639   0.9821   0.6505   1.0000   0.7904   0.9639   0.5403   0.4789
+c            0.9250   0.6609   0.9794   0.7904   1.0000   0.9250  -0.0885  -0.1594
+w            1.0000   0.8965   0.8293   0.9639   0.9250   1.0000   0.2967   0.2278
+R            0.2967   0.6891  -0.2876   0.5403  -0.0885   0.2967   1.0000   0.9975
+r            0.2278   0.6356  -0.3552   0.4789  -0.1594   0.2278   0.9975   1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+y           0.9706  0.9405  0.9105  0.8814  0.8535
+I           0.9335  0.8677  0.8047  0.7457  0.6919
+k           0.9988  0.9957  0.9908  0.9842  0.9761
+a           0.9482  0.8966  0.8466  0.7994  0.7559
+c           0.9946  0.9875  0.9788  0.9688  0.9578
+w           0.9706  0.9405  0.9105  0.8814  0.8535
+R           0.9225  0.8462  0.7734  0.7056  0.6440
+r           0.9263  0.8538  0.7844  0.7198  0.6610
+Total computing time : 0h00m01s
