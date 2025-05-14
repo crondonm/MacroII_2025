@@ -11,9 +11,9 @@ tic0 = tic;
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info
 options_ = [];
 M_.fname = 'Ejemplo_Dynare_2';
-M_.dynare_version = '6.0';
-oo_.dynare_version = '6.0';
-options_.dynare_version = '6.0';
+M_.dynare_version = '6.3';
+oo_.dynare_version = '6.3';
+options_.dynare_version = '6.3';
 %
 % Some global variables initialization
 %

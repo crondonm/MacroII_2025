@@ -1,4 +1,4 @@
-Starting Dynare (version 6.0).
+Starting Dynare (version 6.3).
 Calling Dynare with arguments: none
 Starting preprocessing of the model file ...
 Found 8 equation(s).
@@ -86,4 +86,4 @@ c           0.9946  0.9875  0.9788  0.9688  0.9578
 w           0.9706  0.9405  0.9105  0.8814  0.8535
 R           0.9225  0.8462  0.7734  0.7056  0.6440
 r           0.9263  0.8538  0.7844  0.7198  0.6610
-Total computing time : 0h00m01s
+Total computing time : 0h00m03s
